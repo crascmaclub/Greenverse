@@ -1,4 +1,6 @@
-# 🌍 GREENVERSE – jet2holiday
+<img src="./public/logo.png"> 
+
+# 🌍GREENVERSE – jet2holiday
 
 > “Green Truths, not Green Trends”  
 > Một web app game tương tác giúp thế hệ trẻ nhận diện **greenwashing** và hành động vì **môi trường bền vững**.  
