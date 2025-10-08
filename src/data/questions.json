@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "question": "Sản phẩm ghi '100% phân hủy sinh học' nhưng không có chứng nhận quốc tế. Đây có phải greenwashing?",
+    "options": ["Đúng", "Sai"],
+    "answer": "Đúng"
+  },
+  {
+    "id": 2,
+    "question": "Thương hiệu quảng cáo túi nilon 'tái sử dụng nhiều lần' có phải sản phẩm xanh?",
+    "options": ["Đúng", "Sai"],
+    "answer": "Sai"
+  },
+  {
+    "id": 3,
+    "question": "Một công ty trồng 1000 cây xanh nhưng vẫn sản xuất nhựa dùng 1 lần. Đây có phải greenwashing?",
+    "options": ["Đúng", "Sai"],
+    "answer": "Đúng"
+  }
+]

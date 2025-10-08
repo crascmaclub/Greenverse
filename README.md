@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# 🌍 GREENVERSE – jet2holiday
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> “Green Truths, not Green Trends”  
+> Một web app game tương tác giúp thế hệ trẻ nhận diện **greenwashing** và hành động vì **môi trường bền vững**.  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 💡 Giới thiệu
 
-### `npm start`
++ **Greenverse** là một web app game được phát triển trong khuôn khổ YouthAI hackathon chủ đề *Environment*.  
++ Người chơi hóa thân thành “anh hùng môi trường” – tham gia các minigame nhận diện greenwashing, chọn hành vi đúng, và nhận phản hồi cá nhân hóa từ AI.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
++ Khi kết thúc trò chơi, người chơi sẽ thấy kết quả tác động của mình lên Trái Đất:  
+    - 🌱 **Trái Đất xanh** nếu điểm cao.  
+    - 🗑️ **Trái Đất đầy rác** nếu phạm nhiều lỗi.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+##  Mục tiêu dự án
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Tăng nhận thức của giới trẻ về greenwashing & tiêu dùng bền vững.  
+- Ứng dụng AI (Gemini API) để tạo phản hồi thông minh, thân thiện.  
+- Gamify kiến thức môi trường, biến học thành trải nghiệm vui và gần gũi.  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Công nghệ sử dụng
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Thành phần | Công nghệ |
+|-------------|------------|
+| Frontend | React (Create React App) |
+| Style/UI | TailwindCSS + concept Pixel Art  |
+| Data | JSON file (chứa câu hỏi & đáp án) |
+AI Feedback (Planned) | Google Gemini API (sẽ được tích hợp để cá nhân hóa phản hồi người chơi trong phiên bản tiếp theo)
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Cách chạy dự án (Local)
 
-### `npm run eject`
+Clone repo:
+```bash
+   git clone https://github.com/nghuynn1512/greenverse.git
+   cd greenverse
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Cài đặt dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
+Chạy project:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
+**Ứng dụng sẽ chạy tại http://localhost:3000.**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+##  Thành viên nhóm jet2holiday
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+| Thành viên | Vai trò |
+|-------------|------------|
+| Nguyễn Thị Diệu Linh | Team Leader/ PM |
+| Trần Thị Ngọc Huyền | Tech & Research  |
+| Phùng Thị Thanh Thảo | Content & UI/UX design |
+| Nguyễn Lê Thảo | Design & Art |
+| Nguyễn Anh Thư | Video & Marketing |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##  License
++ Dự án được phát triển phục vụ mục đích giáo dục & cộng đồng.

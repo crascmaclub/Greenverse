@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import HomeScreen from "./components/Welcome";
+import GameScreen from "./components/GameScreen";
+import ResultScreen from "./components/Result";
+import "./App.css"; 
 
-function App() {
+function App() {  const [stage, setStage] = useState("home");
+  const [playerName, setPlayerName] = useState("");
+  const [finalScore, setFinalScore] = useState(0);
+  const [totalQ, setTotalQ] = useState(0);
+
+  const handleStart = (name) => {
+    setPlayerName(name);
+    setStage("game");
+  };
+
+  const handleFinish = (score, total) => {
+    setFinalScore(score);
+    setTotalQ(total);
+    setStage("result");
+  };
+
+  const handleRestart = () => {
+    setStage("home");
+    setFinalScore(0);
+    setTotalQ(0);
+    setPlayerName("");
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App font-sans">
+      {stage === "home" && <HomeScreen onStart={handleStart} />}
+
+      {stage === "game" && (
+        <GameScreen playerName={playerName} onFinish={handleFinish} />
+      )}
+
+      {stage === "result" && (
+        <ResultScreen
+          playerName={playerName}
+          score={finalScore}
+          total={totalQ}
+          onRestart={handleRestart}
+        />
+      )}
     </div>
   );
 }
