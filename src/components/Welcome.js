@@ -9,25 +9,29 @@ function HomeScreen({ onStart }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-green-100 text-center">
-      <h1 className="text-3xl font-bold mb-6 text-green-700">🌍 ECOHERO</h1>
-      <p className="mb-4 text-gray-700">
-        Trở thành anh hùng môi trường và cứu lấy Trái Đất!
-      </p>
-
+    <div
+      className="relative flex flex-col items-center justify-center h-screen bg-[#f8f9ee] bg-contain bg-no-repeat bg-center"
+      style={{
+        backgroundImage: `url('/Enter name.png')`,
+        imageRendering: "pixelated",
+      }}
+    >
       <input
         type="text"
-        placeholder="Nhập tên của bạn..."
+        placeholder= "Enter name..."
         value={name}
         onChange={(e) => setName(e.target.value)}
-        className="p-2 border border-green-400 rounded-md mb-4 text-center"
+        className="absolute top-[52%] w-[300px] h-[50px] text-center rounded-md text-lg font-[Press_Start_2P]
+                   bg-[#a3e7b6]/90 border-4 border-green-700 focus:outline-none"
       />
 
       <button
         onClick={handleStart}
-        className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition"
+        className="absolute top-[65%] w-[200px] h-[50px] text-center text-green-900 font-[Press_Start_2P]
+                   bg-gradient-to-b from-[#b9f074] to-[#87cf4a] border-4 border-green-700 rounded-md 
+                   hover:scale-105 active:scale-95 transition"
       >
-        Bắt đầu 🌱
+        PLAY
       </button>
     </div>
   );

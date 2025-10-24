@@ -1,31 +1,71 @@
-function ResultScreen({ playerName, score, total, onRestart }) {
-  const ratio = score / total;
-  const message =
-    ratio > 0.7
-      ? "🌈 Trái Đất đang hồi sinh nhờ bạn! Tiếp tục nhé, EcoHero!"
-      : ratio > 0.4
-      ? " Bạn đang trên đường trở thành Anh hùng bảo vệ môi trường rồi, cố lên!"
-      : " Trái Đất đang gặp nguy hiểm! Hãy thử lại và làm tốt hơn!";
+import { useEffect, useState } from "react";
+
+function ResultScreen({ score, total, onRestart }) {
+  const [message, setMessage] = useState("");
+  const [tips, setTips] = useState([]);
+  const [bgImage, setBgImage] = useState("/bg.png");
+
+  useEffect(() => {
+    const ratio = score / total;
+
+    if (ratio === 1) {
+      setMessage("Bạn thật sự là người sống xanh chính hiệu! 🌱");
+      setBgImage("/win.png");
+      setTips([
+        "Tiếp tục lan tỏa tinh thần bảo vệ môi trường đến mọi người nhé!",
+        "Thử thách bản thân bằng việc sống 'zero waste' trong 1 ngày 💪",
+      ]);
+    } else if (ratio >= 0.6) {
+      setMessage("Bạn có ý thức bảo vệ môi trường, cố lên nhé!");
+      setBgImage("/win.png");
+      setTips([
+        "Hãy thử mang túi vải khi đi chợ 🛍️",
+        "Giảm sử dụng chai nhựa bằng cách dùng bình cá nhân!",
+      ]);
+    } else {
+      setMessage("Hmm… Có vẻ bạn cần chú ý hơn đến môi trường rồi 😅");
+      setBgImage("/lose.png");
+      setTips([
+        "Đừng vứt rác bừa bãi, hãy phân loại rác đúng cách ♻️",
+        "Tắt điện khi ra khỏi phòng để tiết kiệm năng lượng ⚡",
+      ]);
+    }
+  }, [score, total]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-green-100 text-center">
-      <h1 className="text-3xl font-bold mb-4 text-green-700">
-        Kết quả của {playerName}
-      </h1>
-
-      <p className="text-xl mb-2">
-        Điểm của bạn: <span className="font-semibold">{score}</span> / {total}
-      </p>
-      <p className="text-lg mb-6">{message}</p>
-
-      <button
-        onClick={onRestart}
-        className="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition"
-      >
-        Chơi lại 
-      </button>
+  <div
+    className="relative flex flex-col items-center justify-center min-h-screen bg-cover bg-center text-white"
+    style={{ backgroundImage: `url(${bgImage})` }}
+  >
+    <div className="mt-56 left-10 relative z-10 text-center">
+      <div className="flex items-center justify-center gap-3">
+        <h3 className="text-6xl font-bold drop-shadow-md">Score:</h3>
+        <span className="text-6xl font-bold text-white-300 drop-shadow-md">
+          {score}/{total}
+        </span>
+      </div>
     </div>
-  );
+    <div className="relative z-10 mt-32 text-center px-6 max-w-lg">
+      <div className="bg-black/40 border border-white/30 px-6 py-4 rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.1)]">
+        <h3 className="text-lg font-sans mb-2 text-green-200">
+          Gợi ý cho bạn:
+        </h3>
+        <ul className="text-left space-y-2 list-disc list-inside text-gray-100 font-sans">
+          {tips.map((tip, i) => (
+            <li key={i}>{tip}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+    <button
+      onClick={onRestart}
+      className="absolute bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg text-xl"
+    >
+      Replay
+    </button>
+  </div>
+);
+
 }
 
 export default ResultScreen;

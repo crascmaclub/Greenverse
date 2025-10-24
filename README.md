@@ -1,4 +1,4 @@
-<img src="./public/logo.png"> 
+<img src="./public/logo.png" width=70% height=40%> 
 
 # 🌍GREENVERSE – jet2holiday
 

@@ -1,20 +1,159 @@
 [
-  {
-    "id": 1,
-    "question": "Sản phẩm ghi '100% phân hủy sinh học' nhưng không có chứng nhận quốc tế. Đây có phải greenwashing?",
-    "options": ["Đúng", "Sai"],
-    "answer": "Đúng"
-  },
-  {
-    "id": 2,
-    "question": "Thương hiệu quảng cáo túi nilon 'tái sử dụng nhiều lần' có phải sản phẩm xanh?",
-    "options": ["Đúng", "Sai"],
-    "answer": "Sai"
-  },
-  {
-    "id": 3,
-    "question": "Một công ty trồng 1000 cây xanh nhưng vẫn sản xuất nhựa dùng 1 lần. Đây có phải greenwashing?",
-    "options": ["Đúng", "Sai"],
-    "answer": "Đúng"
-  }
+    {
+        "id": 1,
+        "question": "Một thương hiệu tuyên bố “100% phân hủy sinh học”, nhưng bao bì làm bằng nhựa PLA không có điều kiện công nghiệp phù hợp để phân hủy. Đây có phải là sản phẩm xanh thật không?",
+        "options": [
+            "Có",
+            "Không"
+        ],
+        "answer": "Không",
+        "explanation": "PLA chỉ phân hủy trong môi trường công nghiệp đặc biệt, không tự phân hủy tự nhiên.",
+        "type": "multiple"
+    },
+    {
+        "id": 2,
+        "question": "Một hãng quảng cáo quần áo “xanh” vì dùng túi giấy, nhưng quy trình nhuộm vẫn thải hóa chất ra sông. Đây có phải là greenwashing không?",
+        "options": [
+            "Có",
+            "Không"
+        ],
+        "answer": "Có",
+        "explanation": "Che giấu tác động thật để đánh lừa người tiêu dùng.",
+        "type": "multiple"
+    },
+    {
+        "id": 3,
+        "question": "Sản phẩm ghi “Tự nhiên 100%” nhưng không có chứng nhận nguồn gốc. Bạn nên làm gì?",
+        "options": [
+            "Tin ngay",
+            "Tra cứu chứng nhận",
+            "Đăng bài phốt nhãn hàng",
+            "Không quan tâm"
+        ],
+        "answer": "Tra cứu chứng nhận",
+        "explanation": "Phân biệt sản phẩm thật sự xanh với quảng cáo mơ hồ.",
+        "type": "multiple"
+    },
+    {
+        "id": 4,
+        "question": "Nếu thành phố không phân loại rác, điều gì xảy ra?",
+        "options": [
+            "Tăng hiệu quả tái chế",
+            "Rác chôn lấp tăng nhanh, phát thải khí metan."
+        ],
+        "answer": "Rác chôn lấp tăng nhanh, phát thải khí metan.",
+        "explanation": "Không phân loại khiến rác hữu cơ và nhựa trộn lẫn, phát thải khí nhà kính.",
+        "type": "multiple"
+    },
+    {
+        "id": 5,
+        "question": "Khi nông dân lạm dụng thuốc trừ sâu, điều gì xảy ra với đa dạng sinh học?",
+        "options": [
+            "Sâu bệnh biến mất mãi mãi",
+            "Nhiều loài có lợi chết theo, chuỗi thức ăn bị phá vỡ"
+        ],
+        "answer": "Nhiều loài có lợi chết theo, chuỗi thức ăn bị phá vỡ",
+        "explanation": "Hệ sinh thái mất cân bằng, cây trồng dễ bệnh hơn.",
+        "type": "multiple"
+    },
+    {
+        "id": 6,
+        "question": "Đại dương đầy rác nhựa, sinh vật biển phản ứng thế nào?",
+        "options": [
+            "Không sao, chúng thích nghi được",
+            "Nhiều loài chết vì nuốt nhựa hoặc mắc kẹt.",
+            "Chúng di cư đến vùng không có rác." ,                               
+            "Chúng đứng lên khởi nghĩa"
+        ],
+        "answer": "Nhiều loài chết vì nuốt nhựa hoặc mắc kẹt.",
+        "explanation": "Rác nhựa gây tổn thương và tử vong cho sinh vật biển.",
+        "type": "multiple"
+    },
+    {
+        "id": 7,
+        "question": "Trước khi có túi nilon, người Việt dùng gì để gói đồ ăn?",
+        "options": [],
+        "answer": " lá chuối",
+        "explanation": "Thói quen truyền thống thân thiện môi trường.",
+        "type": "text"
+    },
+    {
+        "id": 8,
+        "question": "Người xưa đựng nước bằng gì thay cho chai nhựa?",
+        "options": [],
+        "answer": "bầu khô",
+        "explanation": "Ngoài ra còn có / Ống tre / Gốm sứ. Chúng đều là những vật liệu tự nhiên và tái sử dụng lâu dài.",
+        "type": "text"
+    },
+    {
+        "id": 9,
+        "question": "Tại sao cuộc sống xưa ít tạo rác nhựa hơn?",
+        "options": [],
+        "answer": "Vì dùng vật liệu tự nhiên, tái sử dụng được",
+        "explanation": "Phong cách sống “zero waste” truyền thống.",
+        "type": "text"
+    },
+    {
+        "id": 10,
+        "question": "Robot thu gom rác dưới biển nên dùng năng lượng nào?",
+        "options": [
+            "Dầu diesel",
+            "Năng lượng mặt trời.",
+            "Năng lượng điện.",
+            "Năng lượng hạt nhân"
+        ],
+        "answer": "Năng lượng mặt trời.",
+        "explanation": "Giúp giảm phát thải khi vận hành.",
+        "type": "multiple"
+    },
+    {
+        "id": 11,
+        "question": "AI có thể giúp giảm rác thực phẩm bằng cách nào?",
+        "options": [
+            "Phân tích thói quen tiêu dùng và dự đoán lượng cần mua",
+            "Khuyến khích mua nhiều để dự phòng."  ,
+            "Gợi ý những nhà hàng gần nơi ở." ,     
+            "Giúp phân loại rác thực phẩm"
+        ],
+        "answer": "Phân tích thói quen tiêu dùng và dự đoán lượng cần mua",
+        "explanation": "AI hỗ trợ tối ưu hóa tiêu dùng và giảm lãng phí.",
+        "type": "multiple"
+    },
+    {
+        "id": 12,
+        "question": "Vật liệu mới có thể biến rác hữu cơ thành gì?",
+        "options": [],
+        "answer": "Năng lượng sinh học",
+        "explanation": "Tận dụng chất thải để tạo tài nguyên mới.",
+        "type": "text"
+    },
+    {
+        "id": 13,
+        "question": "Sau khi chơi game, nếu muốn giảm greenwashing, bạn nên làm gì đầu tiên?",
+        "options": [],
+        "answer": "Tìm hiểu kỹ nhãn mác & thương hiệu trước khi mua",
+        "explanation": "Nhận thức là bước đầu của hành động xanh.",
+        "type": "text"
+    },
+    {
+        "id": 14,
+        "question": "Bạn mang ly riêng đi cà phê, quán giảm 2k. Hành động này có ích gì?",
+        "options": [],
+        "answer": "Giảm lượng ly nhựa dùng một lần",
+        "explanation": "Một thay đổi nhỏ tạo tác động lớn nếu duy trì.",
+        "type": "text"
+    },
+    {
+        "id": 15,
+        "question": "Nhóm bạn tổ chức “Ngày không rác”. Hoạt động nào hiệu quả nhất?",
+        "options": [
+            "Dọn rác và phân loại tại nguồn",
+            "In banner lớn, dùng bóng bay",
+            "Tổ chức ca hát.",                                      
+            " Bán đồ ăn có bao bì được tái chế"
+        ],
+        "answer": "Dọn rác và phân loại tại nguồn",
+        "explanation": "Hành động thiết thực, tránh gây rác mới.",
+        "type": "multiple"
+    }
 ]

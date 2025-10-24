@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import HomeScreen from "./components/Welcome";
+import VSScreen from "./components/VSScreen";
 import GameScreen from "./components/GameScreen";
 import ResultScreen from "./components/Result";
 import "./App.css"; 
 
-function App() {  const [stage, setStage] = useState("home");
+function App() {  
+  const [stage, setStage] = useState("home");
   const [playerName, setPlayerName] = useState("");
   const [finalScore, setFinalScore] = useState(0);
   const [totalQ, setTotalQ] = useState(0);
 
   const handleStart = (name) => {
     setPlayerName(name);
-    setStage("game");
+    setStage("vs");
   };
 
   const handleFinish = (score, total) => {
@@ -28,8 +30,9 @@ function App() {  const [stage, setStage] = useState("home");
   };
 
   return (
-    <div className="App font-sans">
-      {stage === "home" && <HomeScreen onStart={handleStart} />}
+    <div className="App font-pixel">
+      {stage === "home" && <HomeScreen onStart={handleStart} />} 
+      {stage === "vs" && <VSScreen onNext={() => setStage("game")} />}
 
       {stage === "game" && (
         <GameScreen playerName={playerName} onFinish={handleFinish} />
