@@ -9,7 +9,7 @@
 
 ## 💡 Giới thiệu
 
-+ **Greenverse** là một web app game được ***jet2holiday*** - một đội thi của ***CRAS*** - phát triển trong khuôn khổ cuộc thi *Youth AI Hackathon* với chủ đề *Environment*.  
++ **Greenverse** là một web app game được ***jet2holiday*** - một đội thi của ***CRAS*** - phát triển trong khuôn khổ cuộc thi *Youth AI Hackathon* với chủ đề *Environment* và đã lọt top 5 đội thi xuất sắc nhất cũng như dành được giải ***Girl's Leadership***.   
 + Người chơi hóa thân thành “anh hùng môi trường” – tham gia các minigame nhận diện greenwashing, chọn hành vi đúng, và nhận phản hồi cá nhân hóa từ AI.
 
 + Khi kết thúc trò chơi, người chơi sẽ thấy kết quả tác động của mình lên Trái Đất:  
