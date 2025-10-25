@@ -1,13 +1,13 @@
 <img src="./public/logo.png" width=70% height=40%> 
 
-# 🌍GREENVERSE – jet2holiday
+# 🌍GREENVERSE – jet2holiday🌍
 
 > “Green Truths, not Green Trends”  
 > Một web app game tương tác giúp thế hệ trẻ nhận diện **greenwashing** và hành động vì **môi trường bền vững**.  
 
 ---
 
-## 💡 Giới thiệu
+## 💎 Giới thiệu 💎
 
 + **Greenverse** là một web app game được ***jet2holiday*** - một đội thi của ***CRAS*** - phát triển trong khuôn khổ cuộc thi *Youth AI Hackathon* với chủ đề *Environment* và đã lọt top 5 đội thi xuất sắc nhất cũng như dành được giải ***Girl's Leadership***.   
 + Người chơi hóa thân thành “anh hùng môi trường” – tham gia các minigame nhận diện greenwashing, chọn hành vi đúng, và nhận phản hồi cá nhân hóa từ AI.
@@ -18,7 +18,7 @@
 
 ---
 
-##  Mục tiêu dự án
+## 🎯 Mục tiêu dự án 🎯
 
 - Tăng nhận thức của giới trẻ về greenwashing & tiêu dùng bền vững.  
 - Ứng dụng AI (Gemini API) để tạo phản hồi thông minh, thân thiện.  
@@ -26,7 +26,7 @@
 
 ---
 
-## Công nghệ sử dụng
+## 🖥️ Công nghệ sử dụng 🖥️
 
 | Thành phần | Công nghệ |
 |-------------|------------|
@@ -36,7 +36,7 @@
 AI Feedback (Planned) | Google Gemini API (sẽ được tích hợp để cá nhân hóa phản hồi người chơi trong phiên bản tiếp theo)
 ---
 
-## 🚀 Cách chạy dự án (Local)
+## 🚀 Cách chạy dự án (Local) 🚀
 
 Clone repo:
 ```bash
@@ -57,7 +57,7 @@ npm start
 **Ứng dụng sẽ chạy tại http://localhost:3000.**
 
 
-##  Thành viên nhóm jet2holiday
+## 👥 Thành viên nhóm jet2holiday 👥
 
 | Thành viên | Vai trò |
 |-------------|------------|
@@ -68,5 +68,5 @@ npm start
 | Nguyễn Anh Thư | Video & Marketing |
 
 
-##  License
-+ Dự án được phát triển phục vụ mục đích giáo dục & cộng đồng.
+## 🗒️ License 🗒️
+Dự án được phát triển phục vụ mục đích giáo dục & cộng đồng.
