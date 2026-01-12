@@ -10,21 +10,21 @@ function ResultScreen({ score, total, onRestart }) {
 
     if (ratio === 1) {
       setMessage("Bạn thật sự là người sống xanh chính hiệu! 🌱");
-      setBgImage("/win.png");
+      setBgImage("/winrial.png");
       setTips([
         "Tiếp tục lan tỏa tinh thần bảo vệ môi trường đến mọi người nhé!",
         "Thử thách bản thân bằng việc sống 'zero waste' trong 1 ngày 💪",
       ]);
     } else if (ratio >= 0.6) {
       setMessage("Bạn có ý thức bảo vệ môi trường, cố lên nhé!");
-      setBgImage("/win.png");
+      setBgImage("/winrial.png");
       setTips([
         "Hãy thử mang túi vải khi đi chợ 🛍️",
         "Giảm sử dụng chai nhựa bằng cách dùng bình cá nhân!",
       ]);
     } else {
       setMessage("Hmm… Có vẻ bạn cần chú ý hơn đến môi trường rồi 😅");
-      setBgImage("/lose.png");
+      setBgImage("/loserial.png");
       setTips([
         "Đừng vứt rác bừa bãi, hãy phân loại rác đúng cách ♻️",
         "Tắt điện khi ra khỏi phòng để tiết kiệm năng lượng ⚡",

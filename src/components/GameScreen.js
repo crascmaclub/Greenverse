@@ -8,7 +8,7 @@ function GameScreen({ playerName, onFinish }) {
   const [score, setScore] = useState(0);
   const [explanation, setExplanation] = useState("");
   const [answered, setAnswered] = useState(false);
-  const [emoji, setEmoji] = useState("/earth.png");
+  const [emoji, setEmoji] = useState("/emoji-happy.png");
   const [userInput, setUserInput] = useState("");
   const [isPaused, setIsPaused] = useState(false);
 
@@ -34,7 +34,7 @@ function GameScreen({ playerName, onFinish }) {
 
     const newScore = correct ? score + 1 : score;
     setScore(newScore);
-    setEmoji(correct ? "/earth_happy.png" : "/earth_sad.png");
+    setEmoji(correct ? "/emoji-wow.png" : "/emoji-sad.png");
     setExplanation(currentQ.explanation);
     setAnswered(true);
 
@@ -50,7 +50,7 @@ function GameScreen({ playerName, onFinish }) {
   function nextQuestion(updatedScore = score) {
     setExplanation("");
     setAnswered(false);
-    setEmoji("/earth.png");
+    setEmoji("/emoji-happy.png");
     setUserInput("");
     setIsPaused(false);
 
@@ -64,7 +64,7 @@ function GameScreen({ playerName, onFinish }) {
   return (
     <div
       className="relative flex flex-col items-center justify-center min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url('/bg.png')`, imageRendering: "pixelated" }}
+      style={{ backgroundImage: `url('/winrial.png')`, imageRendering: "pixelated" }}
     >
       <div className="absolute inset-0 bg-white/10 backdrop-blur-[3px]"></div>
 
@@ -80,7 +80,7 @@ function GameScreen({ playerName, onFinish }) {
         transition={{ duration: 0.4, ease: "easeOut" }}
         src={emoji}
         alt="Earth emoji"
-        className="absolute top-6 right-[45%] w-20 sm:w-24 md:w-28 drop-shadow-lg"
+        className="absolute top--1 right-0 w-56 m:w-10 d:w-10 drop-shadow-lg"
       />
 
       {/* --- Question box --- */}

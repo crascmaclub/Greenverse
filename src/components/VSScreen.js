@@ -11,7 +11,7 @@ function VSIntroScreen({ onNext }) {
   return (
     <div className="relative flex items-center justify-center h-screen overflow-hidden">
       <img
-        src="/VSscreen.png"
+        src="/winrial.png"
         alt="EcoHero vs Monster"
         className="w-auto h-full object-contain image-pixel"
       />

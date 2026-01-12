@@ -72,26 +72,38 @@
     {
         "id": 7,
         "question": "Trước khi có túi nilon, người Việt dùng gì để gói đồ ăn?",
-        "options": [],
-        "answer": " lá chuối",
+        "options": [
+             "Lá chuối",
+             "Hộp nhựa",
+             "Giấy bạc"
+        ],
+        "answer": "Lá chuối",
         "explanation": "Thói quen truyền thống thân thiện môi trường.",
-        "type": "text"
+        "type": "multiple"
     },
     {
         "id": 8,
         "question": "Người xưa đựng nước bằng gì thay cho chai nhựa?",
-        "options": [],
-        "answer": "bầu khô",
+        "options": [
+             "Bầu khô",
+             "Gáo",
+             "Túi tote"
+        ],
+        "answer": "Bầu khô",
         "explanation": "Ngoài ra còn có / Ống tre / Gốm sứ. Chúng đều là những vật liệu tự nhiên và tái sử dụng lâu dài.",
-        "type": "text"
+        "type": "multiple"
     },
     {
         "id": 9,
         "question": "Tại sao cuộc sống xưa ít tạo rác nhựa hơn?",
-        "options": [],
+        "options": [
+             "Vì dùng vật liệu tự nhiên, tái sử dụng được",
+             "Vì không có tiền mua đồ",
+             "Vì chưa phát minh ra nhựa"
+        ],
         "answer": "Vì dùng vật liệu tự nhiên, tái sử dụng được",
         "explanation": "Phong cách sống “zero waste” truyền thống.",
-        "type": "text"
+        "type": "multiple"
     },
     {
         "id": 10,
@@ -122,26 +134,38 @@
     {
         "id": 12,
         "question": "Vật liệu mới có thể biến rác hữu cơ thành gì?",
-        "options": [],
+        "options": [
+            "Năng lượng hoá học",
+            "Năng lượng sinh học",
+            "Năng lượng điện"
+        ],
         "answer": "Năng lượng sinh học",
         "explanation": "Tận dụng chất thải để tạo tài nguyên mới.",
-        "type": "text"
+        "type": "multiple"
     },
     {
         "id": 13,
         "question": "Sau khi chơi game, nếu muốn giảm greenwashing, bạn nên làm gì đầu tiên?",
-        "options": [],
+        "options": [
+            "Tìm hiểu kỹ nhãn mác & thương hiệu trước khi mua",
+            "Tiếp tục chơi game",
+            "Mua những sản phẩm greenwashing"
+        ],
         "answer": "Tìm hiểu kỹ nhãn mác & thương hiệu trước khi mua",
         "explanation": "Nhận thức là bước đầu của hành động xanh.",
-        "type": "text"
+        "type": "multiple"
     },
     {
         "id": 14,
         "question": "Bạn mang ly riêng đi cà phê, quán giảm 2k. Hành động này có ích gì?",
-        "options": [],
+        "options": [
+            "Giảm lượng ly nhựa dùng một lần",
+            "Tăng doanh thu bán cốc cho quán",
+            "Quảng bá hình ảnh sạch"
+        ],
         "answer": "Giảm lượng ly nhựa dùng một lần",
         "explanation": "Một thay đổi nhỏ tạo tác động lớn nếu duy trì.",
-        "type": "text"
+        "type": "multiple"
     },
     {
         "id": 15,
