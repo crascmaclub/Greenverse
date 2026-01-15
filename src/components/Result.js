@@ -4,10 +4,8 @@ function ResultScreen({ score, total, onRestart }) {
   const [message, setMessage] = useState("");
   const [tips, setTips] = useState([]);
   const [bgImage, setBgImage] = useState("/bg.png");
-
+const ratio = score / total;
   useEffect(() => {
-    const ratio = score / total;
-
     if (ratio === 1) {
       setMessage("Bạn thật sự là người sống xanh chính hiệu! 🌱");
       setBgImage("/winrial.png");
@@ -39,8 +37,11 @@ function ResultScreen({ score, total, onRestart }) {
   >
     <div className="mt-56 left-10 relative z-10 text-center">
       <div className="flex items-center justify-center gap-3">
-        <h3 className="text-6xl font-bold drop-shadow-md">Score:</h3>
-        <span className="text-6xl font-bold text-white-300 drop-shadow-md">
+        <h3 className="text-pixel-3d text-6xl font-bold drop-shadow-md"
+            style = {{ textShadow: '1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000' }}
+        >Score:</h3>
+        <span className="text-6xl font-bold text-white-300 drop-shadow-md"
+              style = {{ textShadow: '1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000' }}>
           {score}/{total}
         </span>
       </div>
@@ -57,12 +58,24 @@ function ResultScreen({ score, total, onRestart }) {
         </ul>
       </div>
     </div>
+    <div className="absolute left-0 right-0 text-center z-10" style={{ top: '80px' }}>     
+       <h1
+        className={`text-8xl mb-6 ${ratio >= 0.6 ? 'text-yellow-400' : 'text-red-500'}`}
+        style={{ 
+          textShadow: '2px 2px 0 #000, 4px 4px 0 #000, 6px 6px 0 #000' 
+        }}
+      >
+        {ratio >= 0.6 ? "YOU WIN!" : "YOU LOSE!"}
+      </h1>
+    </div>
+    <div className="absolute bottom-20 left-0 right-0 text-center px-6">
     <button
       onClick={onRestart}
       className="absolute bottom-6 right-6 bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg text-xl"
     >
       Replay
     </button>
+  </div>
   </div>
 );
 

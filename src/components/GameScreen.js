@@ -12,6 +12,7 @@ function GameScreen({ playerName, onFinish }) {
   const [userInput, setUserInput] = useState("");
   const [isPaused, setIsPaused] = useState(false);
 
+
   useEffect(() => {
     const shuffled = [...questionsData].sort(() => Math.random() - 0.5);
     setQuestions(shuffled);
@@ -64,7 +65,7 @@ function GameScreen({ playerName, onFinish }) {
   return (
     <div
       className="relative flex flex-col items-center justify-center min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url('/winrial.png')`, imageRendering: "pixelated" }}
+      style={{ backgroundImage: `url('/bg.png')`, imageRendering: "pixelated" }}
     >
       <div className="absolute inset-0 bg-white/10 backdrop-blur-[3px]"></div>
 
