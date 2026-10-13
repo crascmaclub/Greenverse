@@ -43,7 +43,7 @@ const ChooseChar = ({ onCharacterLock }) => {
               style={{
                 ...styles.card,
                 borderColor: selected.id === char.id ? char.color : 'transparent',
-                backgroundColor: selected.id === char.id ? '#333333' : '#1c8930'
+                backgroundColor: selected.id === char.id ? '#131212' : '#181515'
               }}
             >
               <img src={char.avatar} alt={char.name} style={styles.smallAvatar} />
@@ -71,12 +71,12 @@ const ChooseChar = ({ onCharacterLock }) => {
 export default ChooseChar;
 
 const styles = {
-  container: { display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', backgroundColor: '#070807', color: 'white', padding: '20px' },
-  header: { marginBottom: '20px' },
+  container: { display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', backgroundColor: '#f4f4f4', color: 'white', padding: '20px' },
+  header: { marginBottom: '20px', color:'#0a0909', textShadow: '2px 2px 4px #000' , fontSize: '2rem', textAlign: 'center' },
   fontFamily: '"Press Start 2P", cursive',
   inputGroup: { marginBottom: '20px' },
-  input: { padding: '10px', fontSize: '1.2rem', backgroundColor: '#222', color: 'white', border: '2px solid #444', outline: 'none' },
-  contentWrapper: { display: 'flex', width: '90%', maxWidth: '800px', backgroundColor: '#1a1a1a', borderRadius: '10px', overflow: 'hidden' },
+  input: { padding: '10px', fontSize: '1.2rem', backgroundColor: '#f9f9f9', color: 'white', border: '2px solid #201d1d', outline: 'none' },
+  contentWrapper: { display: 'flex', width: '90%', maxWidth: '800px', backgroundColor: '#720b0b', borderRadius: '10px', overflow: 'hidden' },
   roster: { flex: 1, padding: '20px', borderRight: '1px solid #ab2c2c' },
   card: { display: 'flex', alignItems: 'center', padding: '10px', cursor: 'pointer', border: '2px solid transparent', marginBottom: '10px', borderRadius: '5px' },
   smallAvatar: { width: '40px', height: '40px', marginRight: '10px' },
